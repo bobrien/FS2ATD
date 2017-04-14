@@ -1,4 +1,4 @@
-FS2ATD - FileSystem To Advanced Threat Defense
+FS2ATD - FileServer To Advanced Threat Defense
 v1.0 (2017) Barry O'Brien (barry_obrien@mcafee.com)
 
 Monitors directories recursively on a fileserver or FTP server for new exe. Checks the new file reputation in Threat 
