@@ -404,7 +404,6 @@ class Event(FileSystemEventHandler):
 
                     elif severity in self.atdquar:
                         # Quarantine the file because ATD result is positive for malware
-            #            cryptor.unlock_file(file_location)
                         Quarantine.move_file(file_location + ".lock")
                         readme = open(file_location + "_READ_ME.txt", "w")
                         readme.write("Your file has been QUARANTINED due to suspected MALWARE.\n\n"
