@@ -20,5 +20,5 @@ Before using:
 *   The ATD user must have REST access.
 *   Ensure your certificates are authorised in Send Restrictions to "TIE Server Set Enterprise Reputation" in ePO
 
-To operate, run the script from a command line with the path you want to monitor as an argument. If you do not supply 
+To operate, run main.py from a command line with the path you want to monitor as an argument. If you do not supply 
 an argument then the same directory as the script will be used (i.e. ".\<dir>")
