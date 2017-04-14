@@ -115,7 +115,7 @@ class Encrypt:
         """Calculate the hashes of the file.
         
         With the open file, read the content as a binary stream and then hash. 
-        Return the hashes (MD5, SHA1, SHA256 as dict object.
+        Return the hashes (MD5, SHA1, SHA256 as dict object).
         """
         open_file = open(file_loc, "rb")
         content = open_file.read()
@@ -199,9 +199,7 @@ class Quarantine:
     def move_file(filelocation):
         """Move the file to the quarantine
         
-        Create the quarantine directory if it doesn't exist
-        then attempt to move the file. 
-        If the file move fails then append "_copy" to the file and attempt to move again.
+        Create the quarantine directory if it doesn't exist then attempt to move the file. 
         """
         quarantine = 'C:\FS2ATD_QUARANTINE\\'
         filename = os.path.basename(filelocation)
