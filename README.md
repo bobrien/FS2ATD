@@ -21,4 +21,4 @@ Before using:
 *   Ensure your certificates are authorised in Send Restrictions to "TIE Server Set Enterprise Reputation" in ePO
 
 To operate, run main.py from a command line with the path you want to monitor as an argument. If you do not supply 
-an argument then the same directory as the script will be used (i.e. ".\\<dir>")
+an argument then the same directory as the script is being run from will be used.
