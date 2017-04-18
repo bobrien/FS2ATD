@@ -1,6 +1,6 @@
 """
 FS2ATD - FileServer To Advanced Threat Defense
-v1.0 (2017) Barry O'Brien (barry_obrien@mcafee.com)
+v1.0.1 (2017) Barry O'Brien (barry_obrien@mcafee.com)
 
 Monitors directories recursively on a fileserver or FTP server for new exe. Checks the new file reputation in Threat 
 Intelligence Exchange (TIE) for Enterprise Reputation, GTI Reputation, and ATD Reputation. If the file has a bad 
@@ -370,7 +370,7 @@ class Event(FileSystemEventHandler):
 
                     # If the status does not indicate success or failure (i.e. it is queued or being analysed,
                     # or some unforeseen error) Timeout set to 12.5 mins (50 ticks * 15 secs)
-                    while status not in [-1, 1, 2] and counter < 25:
+                    while status not in [-1, 1, 2] and counter < 50:
 
                         # Poll for current status every 15 seconds
                         sleep(15)
